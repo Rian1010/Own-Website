@@ -1,0 +1,73 @@
+.body {
+    padding: 0px;
+    margin: 0px;
+}
+
+%background {
+    position: relative;
+    background: {
+        position: 100% 100%;
+        attachment: fixed;
+        repeat: no-repeat;
+        size: cover;
+
+    }
+}
+
+@mixin box ($size, $background-image1) {
+    height: $size;
+    background-image: $background-image1;
+}
+
+.hpimg-1 {
+    width: 100%;
+    @include box(55vh, url('/assets/KoreaSpringGarden.jpg'));
+    @extend %background;
+}
+
+.hpimg-2 {
+    width: 100%;
+    @include box(100vh,
+    url('/assets/duesseldorf.jpg'));
+    @extend %background;
+}
+
+.hpimg-3 {
+    width: 100%;
+    @include box(100vh,
+    url('/assets/terrassenufer-dresden.jpg'));
+    @extend %background;
+}
+
+.hpimg-4 {
+    width: 100%;
+    @include box(100vh,
+    url('/assets/nuernberg-altstadt.jpg'));
+    @extend %background;
+}
+
+.hpimg-5 {
+    width: 100%;
+    @include box(100vh,
+    url('/assets/KoreaSpringGarden.jpg'));
+    @extend %background;
+}
+
+$colors: #ffffff,
+#42a8f9,
+#fffff1,
+#42a8f8;
+
+@each $variable in $colors {
+    $i: index($colors, $variable);
+    .box-#{$i} {
+        background-color: $variable;
+        width: 100%;
+        height: 50vh;
+    }
+}
+
+.hvr-shutter-out-vertical {
+    background-color: #ffffff;
+}
+
