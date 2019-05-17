@@ -17,23 +17,23 @@
 
 .hpimg-1 {
   height: 100vh;
-  background-image: url("/assets/images/sadness-africa.jpg"); }
+  background-image: url("../images/sadness-africa.jpg"); }
 
 .hpimg-2 {
   height: 100vh;
-  background-image: url("/assets/images/south_africa_support.jpg"); }
+  background-image: url("../images/south_africa_support.jpg"); }
 
 .hpimg-3 {
   height: 100vh;
-  background-image: url("/assets/images/african-orphan.jpg"); }
+  background-image: url("../images/african-orphan.jpg"); }
 
 .hpimg-4 {
   height: 100vh;
-  background-image: url("/assets/images/smiling-kids.jpg"); }
+  background-image: url("../images/smiling-kids.jpg"); }
 
 .hpimg-5 {
   height: 100vh;
-  background-image: url("/assets/images/india-kids.jpg"); }
+  background-image: url("../images/india-kids.jpg"); }
 
 .box-1 {
   background-color: linear-gradient(left top, right top, color-stop(0%, #CCCCCC), color-stop(50%, #EEEEEE), color-stop(50%, #EEEEEE), color-stop(100%, #CCCCCC), #42a8f9, #fffff1, #42a8f8);

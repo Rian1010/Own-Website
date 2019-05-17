@@ -27,35 +27,35 @@
 }
 .hpimg-1 {
     
-    @include box(100vh, url('/assets/images/sadness-africa.jpg'));
+    @include box(100vh, url('../images/sadness-africa.jpg'));
     @extend %background, %hpimgs;
 }
 
 .hpimg-2 {
     
     @include box(100vh,
-    url('/assets/images/south_africa_support.jpg'));
+    url('../images/south_africa_support.jpg'));
     @extend %background, %hpimgs;
 }
 
 .hpimg-3 {
     
     @include box(100vh,
-    url('/assets/images/african-orphan.jpg'));
+    url('../images/african-orphan.jpg'));
     @extend %background, %hpimgs;
 }
 
 .hpimg-4 {
     
     @include box(100vh,
-    url('/assets/images/smiling-kids.jpg'));
+    url('../images/smiling-kids.jpg'));
     @extend %background, %hpimgs;
 }
 
 .hpimg-5 {
     
     @include box(100vh,
-    url('/assets/images/india-kids.jpg'));
+    url('../images/india-kids.jpg'));
     @extend %background, %hpimgs;
 }
 
