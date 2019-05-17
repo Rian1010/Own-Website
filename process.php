@@ -10,22 +10,31 @@
     <title>Document</title>
 </head>
 
-<body>
-    <?php
-
+<body class="php_body">
+    <div class="border_php">
+        <?php
+            $name = $_POST["username"];
+            echo "Hello, ".$name."!";
+        ?>
+        <br />
+        <?php
+    
             $loggedIn = true;
                 if ($loggedIn == true) {
-                    echo "You're logged in.";
+                    echo "Thank you for logging in.";
                 } else {
                       echo "Please try again.";
                 }
         ?>
-        <br>
+        
         <?php
-            $name = $_POST["username"];
-            echo "Hello, ".$name;
+            $name = $_GET["password"];
+            echo $name;
             
+            echo "<p class=\"p_php\">Please click <button><a href='index.html'>here</a></button> to continue!</p>" 
         ?>
+    </div>
+        
 </body>
 
 </html>
