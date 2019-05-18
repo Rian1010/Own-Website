@@ -1,39 +1,44 @@
 .body {
   padding: 0px;
-  margin: 0px; }
+  margin: 0px;
+  font-family: "Arapey"; }
 
-.hpimg-1, .hpimg-2, .hpimg-3, .hpimg-4, .hpimg-5 {
+.hpimg-1, .hpimg-2, .hpimg-3 {
   position: relative;
   background-position: 100% 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover; }
 
-.hpimg-1, .hpimg-2, .hpimg-3, .hpimg-4, .hpimg-5 {
+.hpimg-1 {
   width: 100%;
   top: 40px;
   background-size: 132% 100%;
-  background-position: center; }
-
-.hpimg-1 {
+  background-position: center;
   height: 100vh;
   background-image: url("../images/sadness-africa.jpg"); }
 
 .hpimg-2 {
-  height: 100vh;
-  background-image: url("../images/south_africa_support.jpg"); }
-
-.hpimg-3 {
-  height: 100vh;
-  background-image: url("../images/african-orphan.jpg"); }
-
-.hpimg-4 {
+  width: 100%;
+  top: 40px;
+  background-size: 132% 100%;
+  background-position: center;
   height: 100vh;
   background-image: url("../images/smiling-kids.jpg"); }
 
-.hpimg-5 {
+.hpimg-3 {
+  width: 100%;
+  top: 40px;
+  background-size: 132% 100%;
+  background-position: center;
   height: 100vh;
-  background-image: url("../images/india-kids.jpg"); }
+  background-image: url("../images/sadness-africa.jpg"); }
+
+.textHP1 {
+  color: white;
+  margin-top: 1%;
+  padding-top: 10px;
+  padding-left: 10px; }
 
 .box-1 {
   background-color: linear-gradient(left top, right top, color-stop(0%, #CCCCCC), color-stop(50%, #EEEEEE), color-stop(50%, #EEEEEE), color-stop(100%, #CCCCCC), #42a8f9, #fffff1, #42a8f8);
@@ -98,5 +103,78 @@
   transform: translateX(0) scaleX(1);
   opacity: 1;
   filter: blur(0); }
+
+#map {
+  height: 100vh; }
+
+.card {
+  margin-top: 10px;
+  width: 100%; }
+
+.cardImage {
+  width: 100%;
+  height: 150px;
+  background-image: url("../images/south_africa_support.1.jpg");
+  background-size: 100% 100%; }
+
+.section2 {
+  background-color: #f5f4f2;
+  height: 220vh; }
+
+.sticky {
+  padding: 3em;
+  height: 100vh;
+  position: relative;
+  box-sizing: border-box; }
+
+.headerEffect {
+  margin-top: 5px; }
+
+.text {
+  font-size: 1em;
+  width: 50%;
+  margin-top: 5%;
+  padding-right: 10px;
+  position: absolute; }
+
+.bottomLine {
+  width: 100%;
+  height: 5px;
+  background-color: orange;
+  padding-right: 10px;
+  opacity: 0.90;
+  display: block;
+  margin-top: 20px; }
+
+img {
+  position: absolute; }
+
+#orphan {
+  width: 40%;
+  right: 0;
+  top: 20%; }
+
+#kids {
+  width: 25%;
+  right: 0%;
+  top: 25%;
+  margin-top: 15%; }
+
+@media (min-width: 768px) {
+  img:nth-of-type(2) {
+    width: 25%;
+    right: 31%;
+    top: 33%;
+    margin-top: 15%; }
+
+  .section2 {
+    height: 100vh; }
+
+  .cardImage {
+    height: 300px; }
+
+  .textHP1 {
+    padding-top: 100px;
+    padding-left: 40px; } }
 
 /*# sourceMappingURL=style.css.map */
