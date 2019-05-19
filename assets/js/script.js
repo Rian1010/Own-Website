@@ -54,23 +54,29 @@ $("document").ready(function() {
         $('.p3').removeClass('p-fonts')
     });
 
-    var tl = new TimelineMax({ onUpdate: updatePercentage });
+    var t1 = new TimelineMax();
+
+    var t2 = new TimelineMax();
+    
     const controller = new ScrollMagic.Controller();
 
-    tl.from(".headerEffect, .text", .1, { x: 200, opacity: 0 })
+    t1.from(".headerEffect, .text, #orphan, #kids", 1, { opacity: 0, scale: 0 });
+
+    const controller2 = new ScrollMagic.Controller();
+    t2.from(".cardsHeading, .card", 1, { opacity: 0, scale: 0 });
+
 
 
     const scene = new ScrollMagic.Scene({
-            triggerElement: ".sticky",
-            triggerHook: "onLeave",
-            duration: "100%"
+            triggerElement: ".sticky", //parent
         })
-        .setPin(".sticky")
-        .setTween(tl)
+        .setTween(t1)
         .addTo(controller);
 
-    function updatePercentage() {
-        tl.progress();
-        console.log(tl.progress());
-    }
+    const scene2 = new ScrollMagic.Scene({
+            triggerElement: ".section2", //parent
+        })
+        .setTween(t2)
+        .addTo(controller);
+
 });
