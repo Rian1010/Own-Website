@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+</head>
+
+<body>
+    <div id="draw-here"></div>
+    
+    <script>
+        var h = 500;
+        var w = 500; 
+        var barpadding = 1
+        
+        var dataset = [
+            450, 100, 100, 279, 500, 25, 350, 120, 80, 130,
+            110, 102, 375, 200, 175, 168, 180, 230, 205,
+        ];
+        
+        var svg = d3.select("#draw-here")
+                    .append("svg")
+                    .attr("height", h)
+                    .attr("width", w);
+                    
+        svg.selectAll("rect")
+            .data(dataset)
+            .enter()
+            .append("rect")
+            .attr("x", function (d, i) {
+                return i * (w / dataset.length)
+            })
+            .attr("y",)
+            .attr("height",)
+            .attr("width",)
+    </script>
+</body>
+
+</html>

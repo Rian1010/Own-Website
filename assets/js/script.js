@@ -11,6 +11,7 @@ $("document").ready(function() {
     $('.btn_p3').click(function() {
         $('.p3').slideToggle(500)
     });
+    
 
 
 
